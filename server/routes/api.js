@@ -3,7 +3,7 @@ const router = express.Router();
 const VaccinationData = require('../models/VaccinationData');
 
 // Get all data
-router.get('/vaccination-data', async (req, res) => {
+router.get('/vaccination-data',  async (req, res) => {
   try {
     const filters = {};
     if (req.query.national_or_jurisdictional) filters.national_or_jurisdictional = req.query.national_or_jurisdictional;
